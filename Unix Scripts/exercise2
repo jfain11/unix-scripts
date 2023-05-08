@@ -1,0 +1,29 @@
+#!/bin/bash
+#jacob fain
+
+file1=$1
+file2=$2
+
+if [[ -f $file1 && -f $file2 ]]
+then
+
+        echo "both file1 and file2 are normal files."
+
+	f1_perm=$(ls -l $file1 | cut -f1 -d " ")
+	f2_perm=$(ls -l $file2 | cut -f1 -d " ")
+
+        if [ $f1_perm == $f2_perm ]; then
+                echo "the files have the same permission:"
+                echo $f1_perm
+        else
+                echo "the files have different permissions:"
+                echo $file1
+		echo $f1_perm
+                echo $file2
+		echo $f2_perm
+
+	fi
+
+else
+        echo "either file1, file2, or both is not a normal file."
+fi

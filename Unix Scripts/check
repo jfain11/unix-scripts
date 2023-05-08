@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+if [ $# != 1 ]; then
+	echo "enter one filename as an argument and this script will check its type"
+
+#! if file is a directory
+elif [ -d $1 ]; then
+	echo "number of files in directory: "
+	ls $1 | wc -w
+
+
+elif [ -f $1 ]; then
+	echo "the owner of this file is: $USER"
+
+
+
+fi
+
+

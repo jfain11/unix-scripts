@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# == 0 ]
+then
+	echo "one argument needed"
+else
+	answer=$1
+	while true
+	do
+		read -p "enter a name: " guess
+		if [ $guess == $answer ]
+		then
+			echo "that is correct!"
+			break
+		fi
+		
+	done
+
+fi

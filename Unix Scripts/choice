@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "enter A, B, or C: " ch
+
+if [ $ch == "A" ]; then
+	echo "You entered A"
+
+elif [ $ch == "B" ]; then
+	echo "You entered B"
+
+elif [ $ch == "C" ]; then
+        echo "You entered C"
+else
+	echo "You did not enter A, B, or C"
+
+fi

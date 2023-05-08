@@ -1,0 +1,53 @@
+#!/bin/bash
+#jacob fain
+
+echo "options:"
+echo "(D): print date"
+echo "(U): print online usernames"
+echo "(W): print current working directory"
+echo "(L): list all directories and files under current directory"
+echo "(Q): quit the program"
+
+while true; do
+
+	read -p "select a option: " selection
+
+	case $selection in
+
+	"D"|"d")
+		date
+		;;
+
+	"U"|"u")
+                who
+                ;;
+
+	"W"|"w")
+                pwd
+                ;;
+	
+	"L"|"l")
+		ls -r
+		;;
+	
+	"Q"|"q")
+		break
+		;;
+	
+	*)	
+		echo "that is not an option"
+		;;
+	esac
+done
+		
+
+	
+
+
+		
+
+
+
+
+
+done

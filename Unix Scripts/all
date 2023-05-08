@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# == 0 ]; then
+	echo "You must provide at least one argument"
+
+else
+	echo "This script was called $0"
+	echo "The first argument is $1"
+	echo "The second argument is $2"
+	echo "The third argument is $3"
+
+fi

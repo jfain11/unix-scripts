@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $# == 0 ]; then
+	echo "enter a number as a argument"
+
+else
+	num=1
+	limit=$1
+        while [ true ]
+        	do
+              		echo $num
+                       	num=$((num+1))
+                        if [ $num -gt $limit ]; then
+					
+                        	break
+                        fi
+
+	done
+                      
+fi
+		
+
+
